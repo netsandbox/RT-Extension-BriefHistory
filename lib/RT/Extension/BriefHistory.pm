@@ -6,15 +6,11 @@ use warnings;
 
 our $VERSION = '0.01';
 
-1;
-
-__END__
-
 =head1 NAME
 
 RT::Extension::BriefHistory - Filter history by type on ticket display page
 
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 This plugin filter the history on the ticket display page by transaction types
 that are defined in the configuration.
@@ -27,22 +23,37 @@ an discussion in the rt-user mailing list (look at SEE ALSO).
 
 =head1 INSTALLATION
 
-Installation instructions for RT-Extension-BriefHistory:
+=over
 
-	1. perl Makefile.PL
-	2. make
-	3. make install
-	4. Add 'RT::Extension::BriefHistory' to @Plugins in /opt/rt3/etc/RT_SiteConfig.pm
-	5. Clear mason cache: rm -rf /opt/rt3/var/mason_data/obj
-	6. Restart webserver
+=item C<perl Makefile.PL>
+
+=item C<make>
+
+=item C<make install>
+
+May need root permissions
+
+=item Edit your F</opt/rt4/etc/RT_SiteConfig.pm>
+
+If you are using RT 4.2 or greater, add this line:
+
+    Plugin('RT::Extension::BriefHistory');
+
+For RT 4.0, add this line:
+
+    Set(@Plugins, qw(RT::Extension::BriefHistory));
+
+or add C<RT::Extension::BriefHistory> to your existing C<@Plugins> line.
+
+=back
 
 =head1 AUTHOR
 
 Christian Loos <cloos@netsandbox.de>
 
-=head1 COPYRIGHT AND LICENCE
+=head1 LICENCE AND COPYRIGHT
  
-Copyright (C) 2010, Christian Loos.
+Copyright (C) 2010-2014, Christian Loos.
  
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
@@ -56,3 +67,5 @@ L<http://wiki.bestpractical.com/view/HideTransactions>
 L<http://lists.bestpractical.com/pipermail/rt-users/2010-May/064720.html>
 
 =cut
+
+1;
