@@ -1,3 +1,4 @@
+Changes
 etc/BriefHistory_Config.pm
 html/Callbacks/BriefHistory/Ticket/Elements/ShowHistory/SkipTransaction
 inc/Module/Install.pm
