@@ -1,7 +1,11 @@
 use inc::Module::Install;
 
-RTx         'RT-Extension-BriefHistory';
-all_from    'lib/RT/Extension/BriefHistory.pm';
-readme_from 'lib/RT/Extension/BriefHistory.pm';
+RTx 'RT-Extension-BriefHistory';
 
+repository 'https://github.com/cloos/RT-Extension-BriefHistory';
+
+requires_rt '4.0.0';
+rt_too_new '4.4.0';
+
+sign;
 WriteAll;
