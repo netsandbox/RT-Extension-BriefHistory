@@ -1,0 +1,13 @@
+<%INIT>
+return unless $Object->isa("RT::Ticket");
+return if $DisplayPath eq 'History.html';
+
+my @types = RT->Config->Get('BriefHistoryTypes');
+$$skip = 1 unless grep { $_ eq $Transaction->Type } @types;
+</%INIT>
+<%ARGS>
+$Object
+$DisplayPath
+$Transaction
+$skip
+</%ARGS>
