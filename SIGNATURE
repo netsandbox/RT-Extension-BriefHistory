@@ -1,0 +1,47 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 e1c1160fa1e50d8ae0619d3bdfaa46a4eb595fa0 Changes
+SHA1 f6f5f4c5f2b7d35bd6c6435d847435fae5d35414 MANIFEST
+SHA1 2e518a0658eec0a6ef39686480178aec5cc0f6ce MANIFEST.SKIP
+SHA1 5fdaffc7aae6fb9406c25d0a283ba01eba8cfd01 META.yml
+SHA1 6e82cd31f0ec6d771a303ba8474a872a135bd18b Makefile.PL
+SHA1 d333917edb7ea6d714a66cf043d95ee58aaf7cd6 README
+SHA1 73c8d2cc694d1cea91cb346b0726ff4299ea2d26 etc/BriefHistory_Config.pm
+SHA1 95b9fb22d70b8de41adc567955f206ccccb1348e html/Callbacks/BriefHistory/Elements/ShowHistory/SkipTransaction
+SHA1 1e71b4d6532701111ab0b80249a1156e695cd5f9 html/Callbacks/BriefHistory/Ticket/Elements/ShowHistory/SkipTransaction
+SHA1 4f7982f7e554df23debce735ab343d88d7355140 inc/Module/Install.pm
+SHA1 c68c85ca62ae30d83f633975cd9af2a0789f59e0 inc/Module/Install/Base.pm
+SHA1 4797fd314e2653a427e725104704b0320993ba8c inc/Module/Install/Can.pm
+SHA1 b771d93af2bfc41273f48fa36082bf1bd6f21dbe inc/Module/Install/Fetch.pm
+SHA1 901e781b7169531c5f5b274db17465ce32715c56 inc/Module/Install/Include.pm
+SHA1 f4f3258a505a432a58cbcdc1fd030ef5e8e90985 inc/Module/Install/Makefile.pm
+SHA1 100a0dd8572f0b40373350fdd6c0a6f035d9dc39 inc/Module/Install/Metadata.pm
+SHA1 89d2b9286f41bf21e5823d0421c217ecdf6ee821 inc/Module/Install/RTx.pm
+SHA1 3fdf4c0cffdb1a2e23e5cd26bf95be553f1f9590 inc/Module/Install/RTx/Runtime.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 4490fed943f4e556db9fd054b7ec8765ca417f7d inc/Module/Install/Win32.pm
+SHA1 8464ddf690b9f7036a0974ff172ec0ced2f6a329 inc/Module/Install/WriteAll.pm
+SHA1 4afcd32d7a733dcf0d21f2cda456fed47012cd9c inc/YAML/Tiny.pm
+SHA1 3b39cfb54fdbc374793e4c8581a8cdf3062fb2c8 inc/unicore/Name.pm
+SHA1 766a863286bb6bdeeeef389964a4750a98ee1d08 lib/RT/Extension/BriefHistory.pm
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlP8QnYACgkQTwqgb7Yxh3zKUQCeNwx6pDMzXhZEIAZGYim6hS9l
+qEwAoIxdyG79KL52VzKqA3ViG8RQ+Nn5
+=dQU9
+-----END PGP SIGNATURE-----
