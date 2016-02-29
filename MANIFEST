@@ -1,6 +1,7 @@
 Changes
 etc/BriefHistory_Config.pm
 html/Callbacks/BriefHistory/Elements/ShowHistory/SkipTransaction
+html/Callbacks/BriefHistory/Elements/ShowHistoryPage/SkipTransaction
 html/Callbacks/BriefHistory/Ticket/Elements/ShowHistory/SkipTransaction
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
