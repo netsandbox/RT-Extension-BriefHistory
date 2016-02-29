@@ -1,9 +1,2 @@
-<%INIT>
-return if $r->uri =~ /History\.html/;
-my @types = RT->Config->Get('BriefHistoryTypes');
-$$skip = 1 unless grep { $_ eq $Transaction->Type } @types;
-</%INIT>
-<%ARGS>
-$Transaction
-$skip
-</%ARGS>
+%# RT 4.0
+<& /Callbacks/BriefHistory/Elements/ShowHistoryPage/SkipTransaction, %ARGS &>
