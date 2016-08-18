@@ -1,3 +1,4 @@
+.travis.yml
 Changes
 etc/BriefHistory_Config.pm
 html/Callbacks/BriefHistory/Elements/ShowHistory/SkipTransaction
