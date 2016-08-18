@@ -19,6 +19,7 @@ no_index:
     - etc
     - html
     - inc
+    - xt
 requires:
   perl: 5.8.3
 resources:
